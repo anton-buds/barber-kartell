@@ -1,0 +1,241 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tw-animate-css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Navbar Styles */
+.navbar-button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+.navbar-link:hover {
+  color: var(--primary-color);
+}
+
+/* Custom Font Styles */
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.heading-xl {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.heading-lg {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.heading-md {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.body-text {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+/* Theme Variables */
+:root {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-body: var(--font-playfair);
+  --font-heading: var(--font-raleway);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+.logo{
+  height: 30px;
+  object-fit: cover;
+  width: 30px;
+  border-radius: 100%;
+}
+
+:root {
+  /* Main Color Variables */
+  --primary-color: #800020; /* Burgundy - for primary buttons and CTAs */
+  --secondary-color: #4682B4; /* Steel blue - for secondary elements */
+  --white: #FFFFF0; /* Ivory - for light backgrounds */
+  --black: #000000; /* Jet black - for text */
+  --background-light: #FFFFF0; /* Ivory - for light backgrounds */
+  --background-medium: #B2BDB5; /* Ash gray - for alternating sections */
+  --text-dark: #000000; /* Jet black - for main text */
+  --accent-color: #800020; /* Burgundy - for accents and highlights */
+
+  /* Classic Barbershop */
+  --dark-navy: #1B1B2C;
+  --crimson-red: #B42222;
+  --ivory-white: #FAF8F5;
+  --muted-silver: #B0B0B0;
+  --leather-brown: #593D36;
+
+  /* Gentleman's Touch */
+  --charcoal-black: #2B2B2B;
+  --rich-gold: #D4AF35;
+  --cream-white: #F5F5DB;
+  --tobacco-brown: #794A39;
+  --stel-gray: #7D7D7D;
+
+  /* Modern Vintage */
+  --gunmetal-gray: #2E2E2E;
+  --dusty-blue: #5D6D7E;
+  --warm-taupe: #A79E90;
+  --creamy-white: #FDF6ED;
+  --rust-red: #8C3B3B;
+
+  /* Barber & Blade */
+  --jet-black: #000000;
+  --steel-blue: #4682B4;
+  --burgundy: #800020;
+  --ash-gray: #B2BDB5;
+  --ivory: #FFFFF0;
+
+
+
+
+
+
+  --radius: 0.625rem;
+  --background: #FFFFFF;
+  --foreground: #1A1A2E;
+  --card: #FFFFFF;
+  --card-foreground: #1A1A2E;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A1A2E;
+  --primary: #800020; /* Burgundy */
+  --primary-foreground: #FFFFFF;
+  --secondary: #4682B4; /* Steel Blue */
+  --secondary-foreground: #1A1A2E;
+  --muted: #F5F5F5;
+  --muted-foreground: #6C757D;
+  --accent: #F5F5F5;
+  --accent-foreground: #1A1A2E;
+  --destructive: #E53935; /* Red */
+  --border: #E2E8F0;
+  --input: #E2E8F0;
+  --ring: #4682B4; /* Steel Blue */
+  --chart-1: #FF6B6B;
+  --chart-2: #4ECDC4;
+  --chart-3: #1A535C;
+  --chart-4: #FFE66D;
+  --chart-5: #FF9F1C;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #1A1A2E;
+  --sidebar-primary: #800020; /* Burgundy */
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F5F5F5;
+  --sidebar-accent-foreground: #1A1A2E;
+  --sidebar-border: #E2E8F0;
+  --sidebar-ring: #4682B4; /* Steel Blue */
+}
+
+.dark {
+  --background: #1A1A2E;
+  --foreground: #FFFFFF;
+  --card: #2A2A42;
+  --card-foreground: #FFFFFF;
+  --popover: #2A2A42;
+  --popover-foreground: #FFFFFF;
+  --primary: #A52A2A; /* Darker Burgundy */
+  --primary-foreground: #FFFFFF;
+  --secondary: #5F9EA0; /* Cadet Blue */
+  --secondary-foreground: #FFFFFF;
+  --muted: #3A3A5C;
+  --muted-foreground: #B0B0B0;
+  --accent: #3A3A5C;
+  --accent-foreground: #FFFFFF;
+  --destructive: #FF5252; /* Lighter Red */
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.15);
+  --ring: #6495ED; /* Cornflower Blue */
+  --chart-1: #6A5ACD;
+  --chart-2: #20B2AA;
+  --chart-3: #FF8C00;
+  --chart-4: #9370DB;
+  --chart-5: #FF6347;
+  --sidebar: #2A2A42;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #6A5ACD;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #3A3A5C;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: #6495ED; /* Cornflower Blue */
+}
+
+/* Base Styles */
+* {
+  border-color: var(--border);
+  outline-color: rgba(var(--ring), 0.5);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
