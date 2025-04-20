@@ -18,7 +18,7 @@ const Footer = () => {
                 width={60}
                 height={70}
                 alt="Gabo The Barber Logo"
-                className="invert"
+                className=""
               />
             </Link>
             <p className="text-slate-400 mb-6">

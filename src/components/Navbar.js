@@ -22,7 +22,7 @@ const Navbar = () => {
             width={60}
             height={60}
             alt="Gabo The Barber Logo"
-            className="hover:scale-105 transition-all duration-300"
+            className="hover:scale-105 transition-all duration-300 "
           />
         </Link>
 

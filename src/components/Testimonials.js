@@ -6,21 +6,21 @@ import { motion, AnimatePresence, useInView } from "framer-motion";
 const testimonials = [
   {
     id: 1,
-    name: "James Wilson",
+    name: "Josh",
     role: "Regular Client",
     quote: "Gabo is hands down the best barber I've ever had. His attention to detail and skill with a razor is unmatched. I always leave looking and feeling my best.",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
     id: 2,
-    name: "Michael Rodriguez",
-    role: "Business Professional",
+    name: "Ralph",
+    role: "Regular Client",
     quote: "I've been going to Gabo for over 2 years now. His on-call service is a game-changer for my busy schedule. Professional, punctual, and perfect cuts every time.",
     avatar: "https://randomuser.me/api/portraits/men/46.jpg",
   },
   {
     id: 3,
-    name: "David Thompson",
+    name: "Pj",
     role: "First-time Client",
     quote: "Was recommended by a friend and I'm so glad I went. Gabo took the time to understand exactly what I wanted and delivered beyond my expectations.",
     avatar: "https://randomuser.me/api/portraits/men/55.jpg",
@@ -87,10 +87,10 @@ const Testimonials = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl font-bold mb-4">
-            Client <span className="text-blue-600">Testimonials</span>
+            Client <span className="text-red-900">Testimonials</span>
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
-          <p className="text-lg text-slate-700 max-w-2xl mx-auto">
+          <div className="w-20 h-1 bg-red-900 mx-auto mb-8"></div>
+          <p className="text-lg text-slate-900 max-w-2xl mx-auto">
             Don't just take my word for it. Here's what my clients have to say about their experience.
           </p>
         </motion.div>
@@ -115,7 +115,7 @@ const Testimonials = () => {
                       <img
                         src={testimonials[current].avatar}
                         alt={testimonials[current].name}
-                        className="w-20 h-20 rounded-full border-4 border-blue-600 object-cover"
+                        className="w-20 h-20 rounded-full border-4 border-red-900 object-cover"
                       />
                     </div>
                     <div className="flex-1">
@@ -123,7 +123,7 @@ const Testimonials = () => {
                         {[...Array(5)].map((_, i) => (
                           <svg
                             key={i}
-                            className="w-5 h-5 text-yellow-500 fill-current"
+                            className="w-5 h-5 text-yellow-300 fill-current"
                             viewBox="0 0 24 24"
                           >
                             <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
@@ -152,7 +152,7 @@ const Testimonials = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-blue-600"
+              className="h-6 w-6 text-red-900"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -172,7 +172,7 @@ const Testimonials = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-blue-600"
+              className="h-6 w-6 text-red-900"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -193,7 +193,7 @@ const Testimonials = () => {
                 key={index}
                 onClick={() => handleDotClick(index)}
                 className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                  current === index ? "bg-blue-600" : "bg-slate-300"
+                  current === index ? "bg-red-900" : "bg-slate-300"
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />

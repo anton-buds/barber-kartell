@@ -7,7 +7,7 @@ import Image from 'next/image';
 const Hero = () => {
   return (
     <section className="relative text-[var(--black)] flex justify-center items-center min-h-screen py-20 pointer-events-auto" style={{ background: 'linear-gradient(to bottom, var(--background-medium), var(--white))' }}>
-      <div className="container mx-auto flex flex-col md:flex-row items-center px-6 py-16 z-10">
+      <div className="container mx-auto flex flex-col md:flex-row lg:flex-row items-center px-6 py-16 z-10">
         {/* Text Content */}
         <motion.div
           className="md:w-1/2 text-center md:text-left mb-10 md:mb-0"
@@ -15,17 +15,17 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="heading-xl text-5xl md:text-6xl font-bold leading-tight">
-            PREMIUM <span style={{ color: 'var(--secondary-color)' }}>BARBER</span> EXPERIENCE
+          <h1 className="heading-xl text-6xl md:text-6xl font-bold leading-tight ">
+            PREMIUM <span style={{ color: 'var(--primary-color)' }}>BARBER</span> EXPERIENCE
           </h1>
-          <p className="mt-6 text-xl md:text-2xl body-text" style={{ color: 'var(--black)' }}>
+          <p className="font-body mt-6 text-xl md:text-2xl body-text" style={{ color: 'var(--black)' }}>
             Quality cuts. Superior products. <br />
             <span className="italic font-semibold">For everybody.</span>
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Link href="/book">
               <motion.button
-                className="px-8 py-3 rounded-full text-lg font-bold shadow-lg transition-all duration-300 cursor-pointer" style={{ backgroundColor: 'var(--secondary-color)', color: 'var(--white)', ':hover': { backgroundColor: 'var(--secondary-color)' } }}
+                className="px-8 py-3 rounded-full text-lg font-bold shadow-lg transition-all duration-300 cursor-pointer" style={{ backgroundColor: 'var(--primary-color)', color: 'var(--white)', ':hover': { backgroundColor: 'var(--secondary-color)' } }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -34,7 +34,7 @@ const Hero = () => {
             </Link>
             <Link href="/#services">
               <motion.button
-                className=" border-2 px-8 py-3 rounded-full text-lg font-bold transition-all duration-300 cursor-pointer" style={{ borderColor: 'var(--secondary-color)', color: 'var(--secondary-color)', ':hover': { backgroundColor: 'rgba(70, 130, 180, 0.1)' } }}
+                className=" border-2 px-8 py-3 rounded-full text-lg font-bold transition-all duration-300 cursor-pointer" style={{ borderColor: 'var(--primary-color)', color: 'var(--primary-color)', ':hover': { backgroundColor: 'rgba(70, 130, 180, 0.1)' } }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

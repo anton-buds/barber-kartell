@@ -4,6 +4,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
 
+
 const HowItWorks = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
@@ -72,7 +73,7 @@ const HowItWorks = () => {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-[var(--background-light)]">
       <div 
         className="container mx-auto px-6"
         ref={ref}
@@ -83,11 +84,11 @@ const HowItWorks = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl font-bold mb-4">
-            How It <span className="text-blue-600">Works</span>
+          <h2 className="text-4xl font-bold mb-4 text-[var(--black)]">
+            How It <span className="text-[var(--primary-color)]">Works</span>
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
-          <p className="text-lg text-slate-700 max-w-2xl mx-auto">
+          <div className="w-20 h-1 bg-[var(--primary-color)] mx-auto mb-8"></div>
+          <p className="text-lg text-[var(--black)] max-w-2xl mx-auto">
             Booking your next haircut is simple and convenient. Follow these easy steps to get started.
           </p>
         </motion.div>
@@ -101,27 +102,27 @@ const HowItWorks = () => {
           {steps.map((step, index) => (
             <motion.div
               key={step.id}
-              className="bg-slate-50 p-8 rounded-lg text-center relative"
+              className="bg-[var(--background-medium)] p-8 rounded-lg text-center relative"
               variants={itemVariants}
             >
               {/* Step Number */}
-              <div className="absolute -top-5 -left-5 bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl">
+              <div className="absolute -top-5 -left-5 bg-[var(--primary-color)] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl">
                 {step.id}
               </div>
               
               {/* Connector Line */}
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-blue-600 z-0"></div>
+                <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-[var(--primary-color)] z-0"></div>
               )}
               
               {/* Icon */}
-              <div className="text-blue-600 flex justify-center mb-4">
+              <div className="text-[var(--primary-color)] flex justify-center mb-4">
                 {step.icon}
               </div>
               
               {/* Content */}
-              <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-              <p className="text-slate-600">{step.description}</p>
+              <h3 className="text-xl font-bold mb-3 text-[var(--primary-color)] ">{step.title}</h3>
+              <p className="text-[var(--white)]">{step.description}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -137,7 +138,7 @@ const HowItWorks = () => {
           </p>
           <Link href="/book">
             <motion.button 
-              className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-bold hover:bg-blue-700 transition-all duration-300"
+              className="bg-[var(--primary-color)] text-white px-8 py-3 rounded-full text-lg font-bold hover:bg-blue-700 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
