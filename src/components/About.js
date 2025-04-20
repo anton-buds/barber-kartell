@@ -116,7 +116,7 @@ const About = () => {
                 className="flex items-start"
                 variants={itemVariants}
               >
-                <div className="p-2 rounded-full mr-4" style={{ backgroundColor: 'var(--secondary-color)' }}>
+                <div className="p-2 rounded-full mr-4" style={{ backgroundColor: 'var(--primary-color)' }}>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
@@ -131,7 +131,7 @@ const About = () => {
                 className="flex items-start"
                 variants={itemVariants}
               >
-                <div className="p-2 rounded-full mr-4" style={{ backgroundColor: 'var(--secondary-color)' }}>
+                <div className="p-2 rounded-full mr-4" style={{ backgroundColor: 'var(--primary-color)' }}>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
@@ -146,7 +146,7 @@ const About = () => {
                 className="flex items-start"
                 variants={itemVariants}
               >
-                <div className="p-2 rounded-full mr-4" style={{ backgroundColor: 'var(--secondary-color)' }}>
+                <div className="p-2 rounded-full mr-4" style={{ backgroundColor: 'var(--primary-color)' }}>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
@@ -159,7 +159,7 @@ const About = () => {
             </motion.div>
 
             <motion.p
-              className="text-lg italic" style={{ color: 'var(--primary-color)' }}
+              className="text-lg italic font-bold" style={{ color: 'var(--primary-color)' }}
               variants={itemVariants}
             >
               "My goal is to exceed your expectations with every visit, whether at my shop or in the comfort of your own space."
